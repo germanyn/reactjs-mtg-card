@@ -15,13 +15,13 @@ Based on [Davide Iaiunese good work](https://codeburst.io/make-a-magic-the-gathe
 ## Install
 
 ```bash
-npm install reactjs-mtg-card
+npm install reactjs-mtg-card keyrune mana-font
 ```
 
 or
 
 ```bash
-yarn add reactjs-mtg-card
+yarn add reactjs-mtg-card keyrune mana-font
 ```
 
 ## Usage
