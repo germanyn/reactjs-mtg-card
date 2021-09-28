@@ -1,6 +1,9 @@
 export const manaCostMatcher = /\{(\w)\}/g
 
 export function manaCostParser(manaCost: string) {
-    return [...manaCost.matchAll(manaCostMatcher)]
-        .map(([_, cost]) => cost)
+    const costs = []
+    for (const costMatch of manaCost.matchAll(manaCostMatcher)) {
+        costs.push(costMatch[1])
+    }
+    return costs
 }
