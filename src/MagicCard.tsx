@@ -68,8 +68,8 @@ const MagicCard: React.FC<CardProps> = (props) => {
                     <div className={styles['frame-header']}>
                         <div className={styles.name}>{props.name}</div>
                         <div className={styles['mana-costs']}>
-                            {manaCostArray && manaCostArray.map(cost => (
-                                <div className={styles['mana-icon']}>
+                            {manaCostArray && manaCostArray.map((cost, index) => (
+                                <div className={styles['mana-icon']} key={index}>
                                     <i className={`${manaIcons[cost] || `ms ms-${cost} ms-cost`} ms-shadow`} />
                                 </div>
                             ))}
@@ -103,12 +103,14 @@ const MagicCard: React.FC<CardProps> = (props) => {
                                 `
                             })
                             return <p
+                                key={index}
                                 className={`description${index < length ? ' ftb-inner-margin' : ''}`}
                                 dangerouslySetInnerHTML={{ __html: textWithManaCosts }}
                             />
                         })}
                         {props.flavorText?.map((text, index) => (
                             <p
+                                key={index}
                                 className={`flavour-text${!index ? ' flavour-text-first-margin' : ''}`}
                                 dangerouslySetInnerHTML={{ __html: text }}
                             />
@@ -117,16 +119,22 @@ const MagicCard: React.FC<CardProps> = (props) => {
 
                     <div className={[styles['frame-bottom-info'], styles['inner-margin']].join(' ')}>
                         <div className={styles['fbi-left']}>
-                            {props.fotterLeftText?.map(text => (
-                                <p dangerouslySetInnerHTML={{ __html: text }} />
+                            {props.fotterLeftText?.map((text, index) => (
+                                <p
+                                    dangerouslySetInnerHTML={{ __html: text }}
+                                    key={index}
+                                />
                             ))}
                         </div>
 
                         <div className={styles['fbi-center']}/>
 
                         <div className={styles['fbi-right']}>
-                            {props.fotterRightText?.map(text => (
-                                <p dangerouslySetInnerHTML={{ __html: text }} />
+                            {props.fotterRightText?.map((text, index) => (
+                                <p
+                                    dangerouslySetInnerHTML={{ __html: text }}
+                                    key={index}
+                                />
                             ))}
                         </div>
                     </div>
