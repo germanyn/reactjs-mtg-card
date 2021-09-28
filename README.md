@@ -4,11 +4,13 @@
 
 [![NPM](https://img.shields.io/npm/v/reactjs-mtg-card.svg)](https://www.npmjs.com/package/reactjs-mtg-card) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+[Demo](https://germanyn.github.io/reactjs-mtg-card/)
+
 ## Magic: The Gathering Reactjs Card Generator
 
 MTG Reactjs is a ongoing project to generate Reactjs cards as you want.
 
-Based on [Davide Iaiunese good work](https://codeburst.io/make-a-magic-the-gathering-card-in-css-5e4e06a5e604). Uses [mana-font](https://github.com/andrewgioia/mana) as the mana symbols and can use [keyrune](https://github.com/andrewgioia/keyrune) as the set symbols (see the examples).
+Based on [Davide Iaiunese good work](https://codeburst.io/make-a-magic-the-gathering-card-in-css-5e4e06a5e604). Uses [mana-font](https://github.com/andrewgioia/mana) as the mana symbols and can use [keyrune](https://github.com/andrewgioia/keyrune) as the set symbols (see the example folder).
 
 ## Install
 
