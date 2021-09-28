@@ -6,9 +6,9 @@
 
 ## Magic: The Gathering Reactjs Card Generator
 
-MTG Reactjs is a ongoing component to generate a card as you want.
+MTG Reactjs is a ongoing project to generate Reactjs cards as you want.
 
-Based on [Davide Iaiunese work](https://codeburst.io/make-a-magic-the-gathering-card-in-css-5e4e06a5e604). Uses [mana-font](https://github.com/andrewgioia/mana) as the mana symbols and can use [keyrune](https://github.com/andrewgioia/keyrune) as the set symbols (see the examples).
+Based on [Davide Iaiunese good work](https://codeburst.io/make-a-magic-the-gathering-card-in-css-5e4e06a5e604). Uses [mana-font](https://github.com/andrewgioia/mana) as the mana symbols and can use [keyrune](https://github.com/andrewgioia/keyrune) as the set symbols (see the examples).
 
 ## Install
 
