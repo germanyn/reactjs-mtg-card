@@ -28,6 +28,7 @@ yarn add reactjs-mtg-card
 
 ```tsx
 import React from 'react'
+import 'reactjs-mtg-card/dist/index.css'
 import { MagicCard } from 'reactjs-mtg-card'
 
 const MyApp = () => {
