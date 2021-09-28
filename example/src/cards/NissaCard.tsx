@@ -1,34 +1,7 @@
-# reactjs-mtg-card
-
-> Made with create-react-library
-
-[![NPM](https://img.shields.io/npm/v/reactjs-mtg-card.svg)](https://www.npmjs.com/package/reactjs-mtg-card) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-
-## Magic: The Gathering Reactjs Card Generator
-
-MTG Reactjs is a ongoing component to generate a card as you want.
-
-Based on [Davide Iaiunese work](https://codeburst.io/make-a-magic-the-gathering-card-in-css-5e4e06a5e604). Uses [mana-font](https://github.com/andrewgioia/mana) as the mana symbols and can use [keyrune](https://github.com/andrewgioia/keyrune) as the set symbols (see the examples).
-
-## Install
-
-```bash
-npm install reactjs-mtg-card
-```
-
-or
-
-```bash
-yarn add reactjs-mtg-card
-```
-
-## Usage
-
-```tsx
 import React from 'react'
 import { MagicCard } from 'reactjs-mtg-card'
 
-const MyApp = () => {
+const NissaCard = () => {
     return (
         <MagicCard
             cardColor="green"
@@ -53,9 +26,4 @@ const MyApp = () => {
     )
 }
 
-export default MyApp
-```
-
-## License
-
-MIT © [germanyn](https://github.com/germanyn)
+export default NissaCard

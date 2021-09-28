@@ -1,0 +1,359 @@
+div, p, img {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.card-container {
+    border: 1px solid black;
+    width: 500px;
+    height: 700px;
+    border-radius: 25px;
+    box-sizing: border-box;
+    /* box-shadow: -8px 9px 16px -3px gray; */
+    background: #171314;  
+}
+ .card-background {
+    height: 600px;
+    margin: 20px 20px 0 20px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 8%;
+    border-bottom-right-radius: 8%;
+    display: flex;
+    background-color: #bbb;
+    z-index: 0;
+}
+
+.green-background {
+    background-image: url(https://image.ibb.co/e1XKAS/green_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*
+    -------------------------
+    -------------------------
+            BORDERS
+    -------------------------
+    -------------------------
+*/
+.frame-header,
+.frame-type-line {
+    border-bottom: 4px solid #a9a9a9;
+    border-left: 2px solid #a9a9a9;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+.frame-header,
+.frame-art,
+.frame-type-line {
+    margin-bottom: 7px;
+}
+
+.green-frame > .frame-header,
+.green-frame > .frame-art,
+.green-frame > .frame-type-line {
+    box-shadow: 
+        0 0 0 2px #171314,
+        0 0 0 5px #26714A,
+        -3px 3px 2px 5px #171314;
+}
+
+.blue-frame > .frame-header,
+.blue-frame > .frame-art,
+.blue-frame > .frame-type-line {
+    box-shadow: 
+        0 0 0 2px #171314,
+        0 0 0 5px #3172ce,
+        -3px 3px 2px 5px #171314;
+}
+
+.red-frame > .frame-header,
+.red-frame > .frame-art,
+.red-frame > .frame-type-line {
+    box-shadow: 
+        0 0 0 2px #171314,
+        0 0 0 5px #ce4e41,
+        -3px 3px 2px 5px #171314;
+}
+
+.black-frame > .frame-header,
+.black-frame > .frame-art,
+.black-frame > .frame-type-line {
+    box-shadow: 
+        0 0 0 2px #171314,
+        0 0 0 5px #2b2821,
+        -3px 3px 2px 5px #171314;
+}
+
+.white-frame > .frame-header,
+.white-frame > .frame-art,
+.white-frame > .frame-type-line {
+    box-shadow: 
+        0 0 0 2px #171314,
+        0 0 0 5px #f7f7f5,
+        -3px 3px 2px 5px #171314;
+}
+
+.frame-text-box {
+    flex-grow: 1;
+}
+
+.green-frame > .frame-text-box {
+    box-shadow: 
+        0 0 0 5px #26714A,
+        -3px 3px 2px 5px #171314;
+}
+
+.blue-frame > .frame-text-box {
+    box-shadow: 
+        0 0 0 5px #3172ce,
+        -3px 3px 2px 5px #171314;
+}
+
+.red-frame > .frame-text-box {
+    box-shadow: 
+        0 0 0 5px #ce4e41,
+        -3px 3px 2px 5px #171314;
+}
+
+.black-frame > .frame-text-box {
+    box-shadow: 
+        0 0 0 5px #2b2821,
+        -3px 3px 2px 5px #171314;
+}
+
+.white-frame > .frame-text-box {
+    box-shadow: 
+        0 0 0 5px #f7f7f5,
+        -3px 3px 2px 5px #171314;
+}
+
+/*
+    ----------------------
+    ----------------------
+            OVERFLOW
+    ----------------------
+    ----------------------
+*/
+.frame-header,
+.frame-type-line,
+.frame-text-box {
+    overflow: hidden;
+}
+
+
+/*
+  ----------------------------------------
+  ----------------------------------------
+            CARD FRAME
+  ----------------------------------------
+  ----------------------------------------
+*/
+.card-frame {
+    z-index: 1;
+    position: relative;
+    height: 648px;
+    max-width: 97%;
+    left: 1%;
+    top: 0.5%;
+    left: 1.2%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.frame-header,
+.frame-type-line {
+    background: 
+        linear-gradient( 0deg, rgba(201, 216, 201, .3), rgba(201, 216, 209, .3) ), 
+        url(https://image.ibb.co/jKByZn/tile_bg_1.jpg);     
+    display: flex;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    border-radius: 18px/40px;
+}
+/*
+  Tue 27/3
+*/
+.name,
+.type {
+    font-size: 1.3em;
+    margin-left: 10px;
+    align-self: end;
+    font-weight: 600;
+    font-family: 'Beleren';
+    margin-right: auto;
+}
+
+.mana-costs {
+    margin-right: 5px;
+    display: flex;
+}
+
+.mana-icon {
+    align-self: center;
+    margin-left: 4px;
+    text-align: center;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.green-mana {
+    background: #ADD3AC;
+    padding-top: 2px;
+    font-size: 20px;
+}
+
+.black-mana {
+    padding-top: 2px;
+    font-size: 20px;
+}
+
+.blue-mana {
+    background: #a9d0f1;
+    padding-top: 2px;
+    font-size: 20px;
+}
+
+.red-mana {
+    background: #f5a688;
+    padding-top: 2px;
+    font-size: 20px;
+}
+
+.white-mana {
+    background: #faf8e1;
+    padding-top: 2px;
+    font-size: 20px;
+}
+
+.frame-header {
+    min-height: 34px;
+    font-size: 18px;
+}
+.frame-art {
+    height: 324px;
+    margin: 0 10px; 
+    background-color: #171314;
+}
+
+.frame-art > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.set-icon {
+    position: relative;
+}
+
+.set-icon > i {
+    right: -5px;
+    top: 50%;
+    margin-top: 2px;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+.set-icon > img {
+    margin-right: 10px;
+    height: 100%;
+    object-fit: contain;
+}
+
+.frame-type-line {
+    margin-top: 0;
+    font-family: 'Beleren';
+    height: 33px;
+    font-size: 15px;
+    position: relative;
+} 
+
+.frame-text-box {
+    margin: 0 10px;
+    background: #d3ded6;
+    background-image: url(https://image.ibb.co/dFcNx7/tile_bg_2.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;   
+    padding: 50px 6px;
+    height: 202px;
+    font-size: 1.2em;
+}
+
+.flavour-text {
+    font-family: 'M Plantin';
+    font-style: italic;
+    font-weight: normal;
+}
+
+.flavour-text-first-margin {
+    padding: 10px 0;
+}
+
+p {
+    margin-bottom: 5px;
+}
+
+.ftb-inner-margin {
+    margin: 5px 1px;
+}
+
+.frame-bottom-info {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 15px 0 15px;
+    height: 26px;
+}
+
+.fbi-left {
+    flex: 1;
+} 
+.fbi-left p:first-of-type {
+    margin-bottom: 1px;
+}
+.fbi-left,
+.fbi-right {
+    font-size: 10px;
+    position: relative;
+    top: 6px;
+}
+
+.fbi-center {
+    border-radius: 60%;
+    flex-basis: 41px;
+    height: 21px;
+    position: relative;
+    bottom: 11px;
+    z-index: 2;
+    background: lightgray;
+    background-image: url(https://image.ibb.co/jyq34n/holofoil_texture_2.jpg);
+    box-shadow: 
+        0 0 0 4px #171314;
+}
+.inner-margins {
+    margin-bottom: 10px;
+}
+
+
+.description {
+    font-family: 'M Plantin';
+    align-items: baseline;
+}
+
+.fbi-right {
+    flex: 1;
+    text-align: right;
+}
+ .frame-bottom-info img {
+    overflow: hidden;
+    max-width: 10px;
+    position: 'relative';
+}
