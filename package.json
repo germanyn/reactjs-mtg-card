@@ -1,6 +1,6 @@
 {
   "name": "reactjs-mtg-card",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Made with create-react-library",
   "author": "germanyn",
   "license": "MIT",
@@ -24,9 +24,7 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "react": "^16.0.0",
-    "keyrune": "^3.8.3",
-    "mana-font": "^1.14.0"
+    "react": "^16.0.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^4.2.4",
