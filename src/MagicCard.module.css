@@ -1,4 +1,4 @@
-div, p, img {
+.card-container * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
